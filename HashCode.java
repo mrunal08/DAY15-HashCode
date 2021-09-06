@@ -76,7 +76,7 @@ import java.util.Map;
         }
     }
 
-public class UC2 {
+public class HashCode {
 
     public static void main(String[] args){
         String str = "Paranoids are not paranoid because they are paranoid but because they keep putting themselves deliberately into paranoid avoidable situations";
@@ -97,10 +97,11 @@ public class UC2 {
             map.put(word,number);
             System.out.println(word +":"+word.hashCode());
 
+            map.remove("avoidable");
         }
 
         System.out.println("\n");
-        System.out.println("Word occurrences are : ");
+        System.out.println("Word occurrences after deleting 'avoidable' are : ");
 
         for (Map.Entry<String, Integer> entry : map.entrySet()){
 
@@ -112,7 +113,15 @@ public class UC2 {
             System.out.println("HashCode : ");
             list.viewList();
             System.out.println("\n");
+
+
+
+
+
+
         }
+
+
 
 
 
